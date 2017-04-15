@@ -86,5 +86,32 @@ namespace terapevtTest
             String expected = "При каждом приеме пищи или при употреблении холодного / горячего / сладкого / кислого?";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating_every_meal1()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Каждый прием");
+            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating_every_meal2()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Каждый прием пищи");
+            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating_every_meal3()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("При каждом прием пищи");
+            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
