@@ -20,7 +20,8 @@ public class terapevt_stom
         diagnosis = new string[]
         {
             "хронический периодонтит.",
-            "обострение хронического периодонтита."
+            "обострение хронического периодонтита.",
+            "периодонтит."
         };
     }
 
@@ -35,6 +36,7 @@ public class terapevt_stom
             case "Острая": ret_question = question[3]; break;
             case "Тупая": ret_question = answer[0] + diagnosis[0] + answer[1]; break;
             case "Приступообразная": ret_question = answer[0] + diagnosis[1] + answer[1]; break;
+            case "Постоянная": ret_question = answer[0] + diagnosis[2] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
