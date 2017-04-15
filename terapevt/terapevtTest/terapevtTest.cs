@@ -113,5 +113,14 @@ namespace terapevtTest
             String expected = "Предварительный диагноз: глубокий кариес.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating_sweet()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("При употреблении сладкого");
+            String expected = "Предварительный диагноз: средний кариес.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
