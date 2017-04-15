@@ -32,5 +32,14 @@ namespace terapevtTest
             String expected = "Боли когда начинаются? Во время приема пищи, ночью или постоянные?";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_blunt_pain()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Тупая");
+            String expected = "Предварительный диагноз: хронический периодонтит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
