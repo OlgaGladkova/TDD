@@ -55,6 +55,7 @@ public class terapevt_stom
             case "При употреблении сладкого": ret_question = answer[0] + diagnosis[5] + answer[1]; break;
             case "При употреблении горячего": ret_question = answer[0] + diagnosis[6] + answer[1]; break;
             case "При употреблении кислого": ret_question = answer[0] + diagnosis[7] + answer[1]; break;
+            case "Спасибо": ret_question = "Жду Вас со снимком на повторный прием)"; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
