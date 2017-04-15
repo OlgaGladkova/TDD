@@ -92,7 +92,7 @@ namespace terapevtTest
         {
             terapevt_stom visit = new terapevt_stom();
             String actyal = visit.get_question("Каждый прием");
-            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            String expected = "Предварительный диагноз: глубокий кариес.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
 
@@ -101,7 +101,7 @@ namespace terapevtTest
         {
             terapevt_stom visit = new terapevt_stom();
             String actyal = visit.get_question("Каждый прием пищи");
-            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            String expected = "Предварительный диагноз: глубокий кариес.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
 
@@ -110,7 +110,7 @@ namespace terapevtTest
         {
             terapevt_stom visit = new terapevt_stom();
             String actyal = visit.get_question("При каждом прием пищи");
-            String expected = "Предварительный диагноз: глубокий кариес. Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            String expected = "Предварительный диагноз: глубокий кариес.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
     }

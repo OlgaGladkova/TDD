@@ -24,7 +24,8 @@ public class terapevt_stom
             "хронический периодонтит.",
             "обострение хронического периодонтита.",
             "периодонтит.",
-            "пульпит."
+            "пульпит.",
+            "глубокий кариес."
         };
     }
 
@@ -43,6 +44,9 @@ public class terapevt_stom
             case "Ночью": ret_question = answer[0] + diagnosis[3] + answer[1]; break;
             case "Во время приема пищи":
             case "Во время еды": ret_question = question[4]; break;
+            case "Каждый прием":
+            case "Каждый прием пищи": 
+            case "При каждом прием пищи": ret_question = answer[0] + diagnosis[4] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
