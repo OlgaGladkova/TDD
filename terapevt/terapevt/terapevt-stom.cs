@@ -14,7 +14,8 @@ public class terapevt_stom
         question = new string[] 
         { "Здравствуйте!",
           "Что Вас беспокоит? Зубная боль?",
-          "Боль какая? Острая, тупая, приступообразная или постоянная?" };
+          "Боль какая? Острая, тупая, приступообразная или постоянная?",
+          "Боли когда начинаются? Во время приема пищи, ночью или постоянные?"};
         answer = new string[] { "Здравствуйте", "Здравствуйте!" };
         diagnosis = new string[1];
     }
@@ -26,7 +27,8 @@ public class terapevt_stom
         {
             case "Здравствуйте": ret_question = question[1]; break;
             case "Да": ret_question = question[2]; break;
-            case "нет": ret_question = "Я вряд ли Вам помогу, обратитесь к другому врачу)"; break;
+            case "Нет": ret_question = "Я вряд ли Вам помогу, обратитесь к другому врачу)"; break;
+            case "Острая": ret_question = question[3]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
