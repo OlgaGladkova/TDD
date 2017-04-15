@@ -21,7 +21,8 @@ public class terapevt_stom
         {
             "хронический периодонтит.",
             "обострение хронического периодонтита.",
-            "периодонтит."
+            "периодонтит.",
+            "пульпит."
         };
     }
 
@@ -37,6 +38,7 @@ public class terapevt_stom
             case "Тупая": ret_question = answer[0] + diagnosis[0] + answer[1]; break;
             case "Приступообразная": ret_question = answer[0] + diagnosis[1] + answer[1]; break;
             case "Постоянная": ret_question = answer[0] + diagnosis[2] + answer[1]; break;
+            case "Ночью": ret_question = answer[0] + diagnosis[3] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
