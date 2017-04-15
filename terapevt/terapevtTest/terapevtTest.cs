@@ -50,5 +50,14 @@ namespace terapevtTest
             String expected = "Предварительный диагноз: обострение хронического периодонтита.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_constant_pain()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Постоянная");
+            String expected = "Предварительный диагноз: периодонтит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
