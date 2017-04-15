@@ -19,7 +19,8 @@ public class terapevt_stom
         answer = new string[] {"Предварительный диагноз: ", "Для уточнения диагноза нужно сделать рентген и провести осмотр." };
         diagnosis = new string[]
         {
-            "хронический периодонтит."
+            "хронический периодонтит.",
+            "обострение хронического периодонтита."
         };
     }
 
@@ -33,6 +34,7 @@ public class terapevt_stom
             case "Нет": ret_question = "Я вряд ли Вам помогу, обратитесь к другому врачу)"; break;
             case "Острая": ret_question = question[3]; break;
             case "Тупая": ret_question = answer[0] + diagnosis[0] + answer[1]; break;
+            case "Приступообразная": ret_question = answer[0] + diagnosis[1] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
