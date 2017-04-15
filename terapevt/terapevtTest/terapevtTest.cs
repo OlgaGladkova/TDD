@@ -14,5 +14,14 @@ namespace terapevtTest
             String expected = "Что Вас беспокоит? Зубная боль?";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_pain()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Да");
+            String expected = "Боль какая? Острая, тупая, приступообразная или постоянная?";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
