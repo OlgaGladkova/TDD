@@ -140,5 +140,14 @@ namespace terapevtTest
             String expected = "Предварительный диагноз: очаговый пульпит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating_sour()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("При употреблении кислого");
+            String expected = "Предварительный диагноз: диффузный пульпит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
