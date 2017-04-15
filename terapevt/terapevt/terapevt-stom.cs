@@ -15,7 +15,9 @@ public class terapevt_stom
         { "Здравствуйте!",
           "Что Вас беспокоит? Зубная боль?",
           "Боль какая? Острая, тупая, приступообразная или постоянная?",
-          "Боли когда начинаются? Во время приема пищи, ночью или постоянные?"};
+          "Боли когда начинаются? Во время приема пищи, ночью или постоянные?",
+          "При каждом приеме пищи или при употреблении холодного / горячего / сладкого / кислого?"
+        };
         answer = new string[] {"Предварительный диагноз: ", "Для уточнения диагноза нужно сделать рентген и провести осмотр." };
         diagnosis = new string[]
         {
@@ -39,6 +41,8 @@ public class terapevt_stom
             case "Приступообразная": ret_question = answer[0] + diagnosis[1] + answer[1]; break;
             case "Постоянная": ret_question = answer[0] + diagnosis[2] + answer[1]; break;
             case "Ночью": ret_question = answer[0] + diagnosis[3] + answer[1]; break;
+            case "Во время приема пищи":
+            case "Во время еды": ret_question = question[4]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
