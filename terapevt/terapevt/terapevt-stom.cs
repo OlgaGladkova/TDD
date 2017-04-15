@@ -26,7 +26,8 @@ public class terapevt_stom
             "периодонтит.",
             "пульпит.",
             "глубокий кариес.",
-            "средний кариес."
+            "средний кариес.",
+            "очаговый пульпит."
         };
     }
 
@@ -50,6 +51,7 @@ public class terapevt_stom
             case "При каждом прием пищи": ret_question = answer[0] + diagnosis[4] + answer[1]; break;
             case "При употреблении холодного":
             case "При употреблении сладкого": ret_question = answer[0] + diagnosis[5] + answer[1]; break;
+            case "При употреблении горячего": ret_question = answer[0] + diagnosis[6] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
