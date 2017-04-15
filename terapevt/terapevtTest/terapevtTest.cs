@@ -23,5 +23,14 @@ namespace terapevtTest
             String expected = "Боль какая? Острая, тупая, приступообразная или постоянная?";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_acute_pain()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Острая");
+            String expected = "Боли когда начинаются? Во время приема пищи, ночью или постоянные?";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
