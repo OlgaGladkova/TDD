@@ -48,6 +48,7 @@ public class terapevt_stom
             case "Каждый прием":
             case "Каждый прием пищи": 
             case "При каждом прием пищи": ret_question = answer[0] + diagnosis[4] + answer[1]; break;
+            case "При употреблении холодного":
             case "При употреблении сладкого": ret_question = answer[0] + diagnosis[5] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
