@@ -68,5 +68,23 @@ namespace terapevtTest
             String expected = "Предварительный диагноз: пульпит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating1()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Во время приема пищи");
+            String expected = "При каждом приеме пищи или при употреблении холодного / горячего / сладкого / кислого?";
+            Assert.AreEqual(expected, actyal);
+        }
+
+        [TestMethod]
+        public void Test_get_question_about_pain_while_eating2()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Во время еды");
+            String expected = "При каждом приеме пищи или при употреблении холодного / горячего / сладкого / кислого?";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
