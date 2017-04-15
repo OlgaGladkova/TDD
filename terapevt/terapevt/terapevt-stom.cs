@@ -27,7 +27,8 @@ public class terapevt_stom
             "пульпит.",
             "глубокий кариес.",
             "средний кариес.",
-            "очаговый пульпит."
+            "очаговый пульпит.",
+            "диффузный пульпит."
         };
     }
 
@@ -52,6 +53,7 @@ public class terapevt_stom
             case "При употреблении холодного":
             case "При употреблении сладкого": ret_question = answer[0] + diagnosis[5] + answer[1]; break;
             case "При употреблении горячего": ret_question = answer[0] + diagnosis[6] + answer[1]; break;
+            case "При употреблении кислого": ret_question = answer[0] + diagnosis[7] + answer[1]; break;
             default:
                 ret_question = "Я Вас не понимаю!"; break;
         }
