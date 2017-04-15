@@ -14,3 +14,5 @@ C:\Users\1\Desktop\4 курс\8 сем тестирование\TDD\terapevt\ter
 C:\Users\1\Desktop\4 курс\8 сем тестирование\TDD\terapevt\terapevtTest\obj\Debug\terapevtTest.csprojResolveAssemblyReference.cache
 C:\Users\1\Desktop\4 курс\8 сем тестирование\TDD\terapevt\terapevtTest\obj\Debug\terapevtTest.dll
 C:\Users\1\Desktop\4 курс\8 сем тестирование\TDD\terapevt\terapevtTest\obj\Debug\terapevtTest.pdb
+C:\Users\1\Desktop\4 курс\8 сем верификация\TDD\terapevt\terapevtTest\bin\Debug\terapevt.exe
+C:\Users\1\Desktop\4 курс\8 сем верификация\TDD\terapevt\terapevtTest\bin\Debug\terapevt.pdb

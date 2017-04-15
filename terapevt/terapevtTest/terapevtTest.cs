@@ -7,11 +7,11 @@ namespace terapevtTest
     public class terapevtTest
     {
         [TestMethod]
-        public void Test_get_question_about_name()
+        public void Test_get_question_about_visit()
         {
             terapevt_stom visit = new terapevt_stom();
             String actyal = visit.get_question("Здравствуйте");
-            String expected = "Как Вас зовут?";
+            String expected = "Что Вас беспокоит? Зубная боль?";
             Assert.AreEqual(expected, actyal);
         }
     }
