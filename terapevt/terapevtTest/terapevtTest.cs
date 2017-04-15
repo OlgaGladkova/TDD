@@ -149,5 +149,14 @@ namespace terapevtTest
             String expected = "Предварительный диагноз: диффузный пульпит.Для уточнения диагноза нужно сделать рентген и провести осмотр.";
             Assert.AreEqual(expected, actyal);
         }
+
+        [TestMethod]
+        public void Test_get_question_goodbye()
+        {
+            terapevt_stom visit = new terapevt_stom();
+            String actyal = visit.get_question("Спасибо");
+            String expected = "Жду Вас со снимком на повторный прием)";
+            Assert.AreEqual(expected, actyal);
+        }
     }
 }
